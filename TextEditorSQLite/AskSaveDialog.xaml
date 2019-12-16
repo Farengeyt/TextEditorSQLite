@@ -1,0 +1,18 @@
+﻿<Window x:Class="TextEditorSQLite.AskSaveDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextEditorSQLite"
+        mc:Ignorable="d"
+        Title="AskSaveDialog" Height="200" Width="300">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+            <TextBlock Margin="10" TextWrapping="Wrap" TextAlignment="Center" Text="You have text in editor. Do you want save its?"/>
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button Width="75" Margin="10" Content="Yes" Click="Yes_click"/>
+                <Button Width="75" Margin="10" Click="No_click" Content="No"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
